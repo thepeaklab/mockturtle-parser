@@ -1,0 +1,15 @@
+version: "0.1.0"
+# Valid result with all users
+
+delay:
+  from: 0
+  to: 1
+
+response:
+  code: 201
+  header:
+    Content-Type: "application/json"
+  body: >
+    {
+      "foo": "bar"
+    }

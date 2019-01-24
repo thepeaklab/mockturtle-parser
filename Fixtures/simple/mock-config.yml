@@ -1,0 +1,11 @@
+version: "0.1.0"
+routes:
+  - url: "v1/auth/login"
+    directory: "login"
+    method: "POST"
+  - url: "v1/auth/logout"
+    directory: "logout"
+    method: "POST"
+  - url: "v1/users"
+  - directory: "global/error_codes"
+  - url: "v1/todo"

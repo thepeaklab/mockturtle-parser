@@ -1,0 +1,10 @@
+version: "0.1.0"
+includes:
+  - valid_login.yml
+routes:
+  - path: v1/bank_accounts/show
+    method: GET
+    state: user_315
+  - path: v1/bank_accounts/finish
+    method: GET
+    state: user_315

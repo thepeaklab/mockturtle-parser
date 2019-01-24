@@ -1,0 +1,13 @@
+version: "0.1.0"
+# Valid result with single user
+
+response:
+  code: 200
+  header:
+    Content-Type: "application/json"
+  body: >
+    {
+      "users": foo
+    }
+
+    

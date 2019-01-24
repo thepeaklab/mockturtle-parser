@@ -1,0 +1,8 @@
+version: "0.1.0"
+# Result for invalid login
+
+response:
+  code: 401
+  header:
+    Content-Type: "application/json"
+  body: >

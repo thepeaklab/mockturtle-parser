@@ -1,0 +1,8 @@
+version: "0.1.0"
+# Result for valid logout
+
+response:
+  code: 200
+  header:
+    Content-Type: "application/json"
+  body: >

@@ -1,0 +1,11 @@
+version: "0.1.0"
+# Valid result with empty list
+
+response:
+  code: 200
+  header:
+    Content-Type: "application/json"
+  body: >
+    {
+      "users": []
+    }

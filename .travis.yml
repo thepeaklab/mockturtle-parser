@@ -1,0 +1,16 @@
+language: swift
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+    - os: osx
+      osx_image: xcode10.1
+
+env:
+  - FIXTURE_PATH_SIMPLE=./Fixtures/simple/mock-config.yml
+
+script:
+  - swiftlint
+  - swift build
+  - swift test
