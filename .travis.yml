@@ -4,6 +4,8 @@ matrix:
   include:
     - os: linux
       dist: trusty
+      language: generic
+      sudo: required
     - os: osx
       osx_image: xcode10.1
 
@@ -11,7 +13,7 @@ env:
   - FIXTURE_PATH_SIMPLE=./Fixtures/simple/mock-config.yml
 
 install:
-  - echo $TRAVIS_OS_NAME
+  - echo "$TRAVIS_OS_NAME"
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then ./scripts/install_swift.sh; fi
 
 
