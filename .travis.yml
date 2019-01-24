@@ -10,6 +10,10 @@ matrix:
 env:
   - FIXTURE_PATH_SIMPLE=./Fixtures/simple/mock-config.yml
 
+install:
+  - if [ $TRAVIS_OS_NAME == "linux" ]; then ./scripts/install_swift.sh; fi
+
+
 script:
   - swiftlint
   - swift build
