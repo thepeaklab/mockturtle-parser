@@ -13,9 +13,9 @@ env:
   - FIXTURE_PATH_SIMPLE=./Fixtures/simple/mock-config.yml
 
 install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./scripts/install_swift.sh; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then source ./scripts/install_swift.sh; fi
 
 script:
-  - swiftlint
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then swiftlint; fi
   - swift build
   - swift test
