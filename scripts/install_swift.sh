@@ -9,7 +9,10 @@ mkdir ~/swift
 tar -xvzf swift-4.1.2-RELEASE-ubuntu14.04.tar.gz -C ~/swift
 
 # make swift available
-export PATH=~/swift/swift-4.1.2-RELEASE-ubuntu14.04/usr/bin:$PATH
+export PATH=~/swift/swift-4.1.2-RELEASE-ubuntu14.04/usr/bin:"${PATH}"
+
+echo $PATH
+ls -l ~/swift/swift-4.1.2-RELEASE-ubuntu14.04/usr/bin
 
 # print swift version
-swift –version
+swift -–version
