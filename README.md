@@ -1,5 +1,6 @@
 # Mockturtle Parser
 
+[![Build Status](https://travis-ci.com/thepeaklab/mockturtle-parser.svg?branch=master)](https://travis-ci.com/thepeaklab/mockturtle-parser)
 ![Swift Version](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)
 ![PackageManager](https://img.shields.io/badge/PackageManager-SPM-brightgreen.svg?style=flat)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat)](https://github.com/thepeaklab/mockturtle-parser/blob/master/LICENSE)
