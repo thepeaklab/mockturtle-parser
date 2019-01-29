@@ -14,7 +14,7 @@ public class MockturtleScenario: Codable {
     public var version: String
     public var identifier: String?
     public var includes: [String]?
-    public var routes: [Route]
+    public var routes: [Route]?
 
     public var includedScenarios: [MockturtleScenario]?
 
@@ -50,7 +50,7 @@ public class MockturtleScenario: Codable {
         for scenario in includedScenarios ?? [] {
             result.append(contentsOf: scenario.flatRoutes())
         }
-        result.append(contentsOf: routes)
+        result.append(contentsOf: routes ?? [])
         return result
     }
 
