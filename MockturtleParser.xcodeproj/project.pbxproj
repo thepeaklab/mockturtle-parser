@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"MockturtleParser::MockturtleParserPackageTests::ProductTarget" /* MockturtleParserPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_84 /* Build configuration list for PBXAggregateTarget "MockturtleParserPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_87 /* PBXTargetDependency */,
+			);
+			name = MockturtleParserPackageTests;
+			productName = MockturtleParserPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		593C339D21F9C2F900A06F17 /* MockturtleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C339C21F9C2F900A06F17 /* MockturtleConfig.swift */; };
+		593C33A021F9C31900A06F17 /* MockturtleDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C339F21F9C31900A06F17 /* MockturtleDelay.swift */; };
+		593C33A221F9C32A00A06F17 /* MockturtleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C33A121F9C32A00A06F17 /* MockturtleLogger.swift */; };
+		593C33A421F9C33800A06F17 /* MockturtleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C33A321F9C33800A06F17 /* MockturtleResponse.swift */; };
+		593C33A621F9C34400A06F17 /* MockturtleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C33A521F9C34400A06F17 /* MockturtleRoute.swift */; };
+		593C33A821F9C34F00A06F17 /* MockturtleScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C33A721F9C34F00A06F17 /* MockturtleScenario.swift */; };
+		593C33AA21F9C35D00A06F17 /* MockturtleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C33A921F9C35D00A06F17 /* MockturtleState.swift */; };
+		OBJ_106 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Constructor.swift */; };
+		OBJ_107 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Decoder.swift */; };
+		OBJ_108 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Emitter.swift */; };
+		OBJ_109 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Encoder.swift */; };
+		OBJ_110 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Mark.swift */; };
+		OBJ_111 /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Node.Mapping.swift */; };
+		OBJ_112 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Node.Scalar.swift */; };
+		OBJ_113 /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Node.Sequence.swift */; };
+		OBJ_114 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Node.swift */; };
+		OBJ_115 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Parser.swift */; };
+		OBJ_116 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Representer.swift */; };
+		OBJ_117 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Resolver.swift */; };
+		OBJ_118 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* String+Yams.swift */; };
+		OBJ_119 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Tag.swift */; };
+		OBJ_120 /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* YamlError.swift */; };
+		OBJ_121 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* shim.swift */; };
+		OBJ_123 /* CYaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Yams::CYaml::Product" /* CYaml.framework */; };
+		OBJ_130 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
+		OBJ_55 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* api.c */; };
+		OBJ_56 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* emitter.c */; };
+		OBJ_57 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* parser.c */; };
+		OBJ_58 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* reader.c */; };
+		OBJ_59 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* scanner.c */; };
+		OBJ_60 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* writer.c */; };
+		OBJ_62 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* CYaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_63 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_70 /* MockturtleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MockturtleParser.swift */; };
+		OBJ_72 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Yams::Yams::Product" /* Yams.framework */; };
+		OBJ_73 /* CYaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Yams::CYaml::Product" /* CYaml.framework */; };
+		OBJ_82 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_93 /* MockturtleParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MockturtleParserTests.swift */; };
+		OBJ_94 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_96 /* MockturtleParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "MockturtleParser::MockturtleParser::Product" /* MockturtleParser.framework */; };
+		OBJ_97 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Yams::Yams::Product" /* Yams.framework */; };
+		OBJ_98 /* CYaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Yams::CYaml::Product" /* CYaml.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		593C339621F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Yams::Yams";
+			remoteInfo = Yams;
+		};
+		593C339721F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Yams::CYaml";
+			remoteInfo = CYaml;
+		};
+		593C339821F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Yams::CYaml";
+			remoteInfo = CYaml;
+		};
+		593C339921F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "MockturtleParser::MockturtleParser";
+			remoteInfo = MockturtleParser;
+		};
+		593C339A21F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Yams::Yams";
+			remoteInfo = Yams;
+		};
+		593C339B21F9C2DD00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Yams::CYaml";
+			remoteInfo = CYaml;
+		};
+		593C339E21F9C2FA00A06F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "MockturtleParser::MockturtleParserTests";
+			remoteInfo = MockturtleParserTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		593C339C21F9C2F900A06F17 /* MockturtleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleConfig.swift; sourceTree = "<group>"; };
+		593C339F21F9C31900A06F17 /* MockturtleDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleDelay.swift; sourceTree = "<group>"; };
+		593C33A121F9C32A00A06F17 /* MockturtleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleLogger.swift; sourceTree = "<group>"; };
+		593C33A321F9C33800A06F17 /* MockturtleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleResponse.swift; sourceTree = "<group>"; };
+		593C33A521F9C34400A06F17 /* MockturtleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleRoute.swift; sourceTree = "<group>"; };
+		593C33A721F9C34F00A06F17 /* MockturtleScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleScenario.swift; sourceTree = "<group>"; };
+		593C33A921F9C35D00A06F17 /* MockturtleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleState.swift; sourceTree = "<group>"; };
+		"MockturtleParser::MockturtleParser::Product" /* MockturtleParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MockturtleParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"MockturtleParser::MockturtleParserTests::Product" /* MockturtleParserTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MockturtleParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* MockturtleParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleParserTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		OBJ_22 /* Node.Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Mapping.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Node.Scalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Scalar.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Node.Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Sequence.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Representer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representer.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		OBJ_29 /* String+Yams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Yams.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		OBJ_31 /* YamlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamlError.swift; sourceTree = "<group>"; };
+		OBJ_32 /* shim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shim.swift; sourceTree = "<group>"; };
+		OBJ_35 /* api.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		OBJ_36 /* emitter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
+		OBJ_37 /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		OBJ_38 /* reader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		OBJ_39 /* scanner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		OBJ_40 /* writer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		OBJ_42 /* CYaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYaml.h; sourceTree = "<group>"; };
+		OBJ_43 /* yaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
+		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/christoph/Development/thepeaklab/frameworks/mockturtle-parser/.build/checkouts/Yams--1483138299204376978/Package.swift"; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* MockturtleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockturtleParser.swift; sourceTree = "<group>"; };
+		"Yams::CYaml::Product" /* CYaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CYaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Yams::Yams::Product" /* Yams.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_123 /* CYaml.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* Yams.framework in Frameworks */,
+				OBJ_73 /* CYaml.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_96 /* MockturtleParser.framework in Frameworks */,
+				OBJ_97 /* Yams.framework in Frameworks */,
+				OBJ_98 /* CYaml.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* MockturtleParserTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* MockturtleParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* MockturtleParserTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = MockturtleParserTests;
+			path = Tests/MockturtleParserTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* Yams 1.0.1 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Yams 1.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Yams */,
+				OBJ_33 /* CYaml */,
+				OBJ_44 /* Package.swift */,
+			);
+			name = "Yams 1.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Yams */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* Constructor.swift */,
+				OBJ_18 /* Decoder.swift */,
+				OBJ_19 /* Emitter.swift */,
+				OBJ_20 /* Encoder.swift */,
+				OBJ_21 /* Mark.swift */,
+				OBJ_22 /* Node.Mapping.swift */,
+				OBJ_23 /* Node.Scalar.swift */,
+				OBJ_24 /* Node.Sequence.swift */,
+				OBJ_25 /* Node.swift */,
+				OBJ_26 /* Parser.swift */,
+				OBJ_27 /* Representer.swift */,
+				OBJ_28 /* Resolver.swift */,
+				OBJ_29 /* String+Yams.swift */,
+				OBJ_30 /* Tag.swift */,
+				OBJ_31 /* YamlError.swift */,
+				OBJ_32 /* shim.swift */,
+			);
+			name = Yams;
+			path = ".build/checkouts/Yams--1483138299204376978/Sources/Yams";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_33 /* CYaml */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* src */,
+				OBJ_41 /* include */,
+			);
+			name = CYaml;
+			path = ".build/checkouts/Yams--1483138299204376978/Sources/CYaml";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_34 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* api.c */,
+				OBJ_36 /* emitter.c */,
+				OBJ_37 /* parser.c */,
+				OBJ_38 /* reader.c */,
+				OBJ_39 /* scanner.c */,
+				OBJ_40 /* writer.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		OBJ_41 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* CYaml.h */,
+				OBJ_43 /* yaml.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"MockturtleParser::MockturtleParser::Product" /* MockturtleParser.framework */,
+				"Yams::Yams::Product" /* Yams.framework */,
+				"MockturtleParser::MockturtleParserTests::Product" /* MockturtleParserTests.xctest */,
+				"Yams::CYaml::Product" /* CYaml.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Dependencies */,
+				OBJ_45 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* MockturtleParser */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* MockturtleParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* MockturtleParser.swift */,
+				593C339C21F9C2F900A06F17 /* MockturtleConfig.swift */,
+				593C339F21F9C31900A06F17 /* MockturtleDelay.swift */,
+				593C33A121F9C32A00A06F17 /* MockturtleLogger.swift */,
+				593C33A321F9C33800A06F17 /* MockturtleResponse.swift */,
+				593C33A521F9C34400A06F17 /* MockturtleRoute.swift */,
+				593C33A721F9C34F00A06F17 /* MockturtleScenario.swift */,
+				593C33A921F9C35D00A06F17 /* MockturtleState.swift */,
+			);
+			name = MockturtleParser;
+			path = Sources/MockturtleParser;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		OBJ_61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_62 /* CYaml.h in Headers */,
+				OBJ_63 /* yaml.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		"MockturtleParser::MockturtleParser" /* MockturtleParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "MockturtleParser" */;
+			buildPhases = (
+				OBJ_69 /* Sources */,
+				OBJ_71 /* Frameworks */,
+				593C33AB21F9C38100A06F17 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_74 /* PBXTargetDependency */,
+				OBJ_76 /* PBXTargetDependency */,
+			);
+			name = MockturtleParser;
+			productName = MockturtleParser;
+			productReference = "MockturtleParser::MockturtleParser::Product" /* MockturtleParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"MockturtleParser::MockturtleParserTests" /* MockturtleParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_89 /* Build configuration list for PBXNativeTarget "MockturtleParserTests" */;
+			buildPhases = (
+				OBJ_92 /* Sources */,
+				OBJ_95 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_99 /* PBXTargetDependency */,
+				OBJ_100 /* PBXTargetDependency */,
+				OBJ_101 /* PBXTargetDependency */,
+			);
+			name = MockturtleParserTests;
+			productName = MockturtleParserTests;
+			productReference = "MockturtleParser::MockturtleParserTests::Product" /* MockturtleParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"MockturtleParser::SwiftPMPackageDescription" /* MockturtleParserPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_78 /* Build configuration list for PBXNativeTarget "MockturtleParserPackageDescription" */;
+			buildPhases = (
+				OBJ_81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockturtleParserPackageDescription;
+			productName = MockturtleParserPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Yams::CYaml" /* CYaml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_51 /* Build configuration list for PBXNativeTarget "CYaml" */;
+			buildPhases = (
+				OBJ_54 /* Sources */,
+				OBJ_61 /* Headers */,
+				OBJ_64 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYaml;
+			productName = CYaml;
+			productReference = "Yams::CYaml::Product" /* CYaml.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Yams::SwiftPMPackageDescription" /* YamsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_126 /* Build configuration list for PBXNativeTarget "YamsPackageDescription" */;
+			buildPhases = (
+				OBJ_129 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YamsPackageDescription;
+			productName = YamsPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Yams::Yams" /* Yams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "Yams" */;
+			buildPhases = (
+				OBJ_105 /* Sources */,
+				OBJ_122 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_124 /* PBXTargetDependency */,
+			);
+			name = Yams;
+			productName = Yams;
+			productReference = "Yams::Yams::Product" /* Yams.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "MockturtleParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Yams::CYaml" /* CYaml */,
+				"MockturtleParser::MockturtleParser" /* MockturtleParser */,
+				"MockturtleParser::SwiftPMPackageDescription" /* MockturtleParserPackageDescription */,
+				"MockturtleParser::MockturtleParserPackageTests::ProductTarget" /* MockturtleParserPackageTests */,
+				"MockturtleParser::MockturtleParserTests" /* MockturtleParserTests */,
+				"Yams::Yams" /* Yams */,
+				"Yams::SwiftPMPackageDescription" /* YamsPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		593C33AB21F9C38100A06F17 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_106 /* Constructor.swift in Sources */,
+				OBJ_107 /* Decoder.swift in Sources */,
+				OBJ_108 /* Emitter.swift in Sources */,
+				OBJ_109 /* Encoder.swift in Sources */,
+				OBJ_110 /* Mark.swift in Sources */,
+				OBJ_111 /* Node.Mapping.swift in Sources */,
+				OBJ_112 /* Node.Scalar.swift in Sources */,
+				OBJ_113 /* Node.Sequence.swift in Sources */,
+				OBJ_114 /* Node.swift in Sources */,
+				OBJ_115 /* Parser.swift in Sources */,
+				OBJ_116 /* Representer.swift in Sources */,
+				OBJ_117 /* Resolver.swift in Sources */,
+				OBJ_118 /* String+Yams.swift in Sources */,
+				OBJ_119 /* Tag.swift in Sources */,
+				OBJ_120 /* YamlError.swift in Sources */,
+				OBJ_121 /* shim.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_130 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_55 /* api.c in Sources */,
+				OBJ_56 /* emitter.c in Sources */,
+				OBJ_57 /* parser.c in Sources */,
+				OBJ_58 /* reader.c in Sources */,
+				OBJ_59 /* scanner.c in Sources */,
+				OBJ_60 /* writer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				593C33A021F9C31900A06F17 /* MockturtleDelay.swift in Sources */,
+				593C33A821F9C34F00A06F17 /* MockturtleScenario.swift in Sources */,
+				593C33A421F9C33800A06F17 /* MockturtleResponse.swift in Sources */,
+				593C33AA21F9C35D00A06F17 /* MockturtleState.swift in Sources */,
+				OBJ_70 /* MockturtleParser.swift in Sources */,
+				593C33A621F9C34400A06F17 /* MockturtleRoute.swift in Sources */,
+				593C339D21F9C2F900A06F17 /* MockturtleConfig.swift in Sources */,
+				593C33A221F9C32A00A06F17 /* MockturtleLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_82 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_93 /* MockturtleParserTests.swift in Sources */,
+				OBJ_94 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Yams::Yams" /* Yams */;
+			targetProxy = 593C339A21F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Yams::CYaml" /* CYaml */;
+			targetProxy = 593C339B21F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Yams::CYaml" /* CYaml */;
+			targetProxy = 593C339721F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Yams::Yams" /* Yams */;
+			targetProxy = 593C339621F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Yams::CYaml" /* CYaml */;
+			targetProxy = 593C339821F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "MockturtleParser::MockturtleParserTests" /* MockturtleParserTests */;
+			targetProxy = 593C339E21F9C2FA00A06F17 /* PBXContainerItemProxy */;
+		};
+		OBJ_99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "MockturtleParser::MockturtleParser" /* MockturtleParser */;
+			targetProxy = 593C339921F9C2DD00A06F17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/Yams_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Yams;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Yams;
+			};
+			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/Yams_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Yams;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Yams;
+			};
+			name = Release;
+		};
+		OBJ_127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/CYaml_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CYaml;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CYaml;
+			};
+			name = Debug;
+		};
+		OBJ_53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/CYaml_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CYaml;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CYaml;
+			};
+			name = Release;
+		};
+		OBJ_67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/MockturtleParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MockturtleParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MockturtleParser;
+			};
+			name = Debug;
+		};
+		OBJ_68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/MockturtleParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MockturtleParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MockturtleParser;
+			};
+			name = Release;
+		};
+		OBJ_79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/MockturtleParserTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MockturtleParserTests;
+			};
+			name = Debug;
+		};
+		OBJ_91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Yams--1483138299204376978/Sources/CYaml/include",
+				);
+				INFOPLIST_FILE = MockturtleParser.xcodeproj/MockturtleParserTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MockturtleParserTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_102 /* Build configuration list for PBXNativeTarget "Yams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_126 /* Build configuration list for PBXNativeTarget "YamsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_127 /* Debug */,
+				OBJ_128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "MockturtleParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_51 /* Build configuration list for PBXNativeTarget "CYaml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_52 /* Debug */,
+				OBJ_53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_66 /* Build configuration list for PBXNativeTarget "MockturtleParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_67 /* Debug */,
+				OBJ_68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_78 /* Build configuration list for PBXNativeTarget "MockturtleParserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_79 /* Debug */,
+				OBJ_80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_84 /* Build configuration list for PBXAggregateTarget "MockturtleParserPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_85 /* Debug */,
+				OBJ_86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_89 /* Build configuration list for PBXNativeTarget "MockturtleParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_90 /* Debug */,
+				OBJ_91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
